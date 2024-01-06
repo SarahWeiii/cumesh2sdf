@@ -6,8 +6,10 @@ A mesh to SDF algorithm implemented with CUDA.
 ### Installation
 
 You will need a working version of PyTorch and CUDA development toolkit.
+And install [`diso`](https://github.com/SarahWeiii/diso) python package.
 
 ```bash
+pip install diso
 pip install git+https://github.com/eliphatfs/cumesh2sdf.git
 ```
 
@@ -60,7 +62,11 @@ Parameters are the same as `get_sdf`, but this function instructs the algorithm 
 
 ### Example
 
-See [example.py](example.py) for an example script.
+See [example.py](example.py) for the mesh2volume example script.
+
+See [test.py](test.py) for the GPU remesh example script.
+
+See [test_openvdb.py](test_openvdb.py) for the OpenVDB remesh example script.
 
 ## Standalone
 
